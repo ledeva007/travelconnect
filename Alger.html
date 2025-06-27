@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Liste des Hôtels</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+    <header class="bg-blue-700 text-white p-6 shadow-md">
+            <div class="max-w-7xl mx-auto">
+            <h1 class="text-3xl font-bold">Nos Hôtels Partenaires</h1>
+            <p class="text-sm">Découvrez notre sélection d'hébergements de qualité</p>
+            </div>
+    </header>
+
+  <!-- Filtre de recherche -->
+  <section class="max-w-7xl mx-auto p-6">
+    <input type="text" placeholder="Rechercher un hôtel..." class="w-full p-3 border border-gray-300 rounded-xl">
+  </section>
+
+  <!-- Grille d'hôtels -->
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto px-6 pb-12">
+    <!-- Hôtel 1 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+      <img src="marriottphoto/facade.jpg" alt="Hôtel Marriott" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h2 class="text-xl font-semibold mb-2">Hôtel Marriott</h2>
+                <p class="text-gray-600 mb-4">Marriott Hotel Bab Ezzouar offre un cadre raffiné et apaisant.</p>
+                    <div class="flex items-center justify-between">
+                        <div class="flex text-yellow-400 text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            
+                        </div>
+                        <button onclick="window.location.href='marriott.html'" class="bg-blue-600 text-white px-4 py-2 rounded-xl">Voir plus</button>
+                    </div>
+            </div>
+    </div>
+
+    <!-- Hôtel 2 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+      <img src="https://www.hotelscombined.fr/himg/cb/ba/bd/ice-23169-120968365-306951.jpg" alt="Hôtel Mercure" class="w-full h-48 object-cover">
+      <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">Hôtel Mercure</h2>
+            <p class="text-gray-600 mb-4"> un hébergement confortable alliant modernité et charme local.</p>
+                <div class="flex items-center justify-between">
+                        <div class="flex text-yellow-400 text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            
+                        </div>
+                        <button onclick="window.location.href='mercure.html'" class="bg-blue-600 text-white px-4 py-2 rounded-xl">Voir plus</button>
+                </div>
+        </div>
+    </div>
+
+    <!-- Hôtel 3 -->
+    <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+      <img src="https://www.alger-city.com/pics/tourisme/hotels/sheraton/hotel-sheraton-alger.jpg" alt="Hôtel sheraton" class="w-full h-48 object-cover">
+      <div class="p-4">
+            <h2 class="text-xl font-semibold mb-2">Hôtel Sheraton</h2>
+            <p class="text-gray-600 mb-4">Proche des sentiers de randonnée, ambiance rustiqueEntre mer et palmiers, luxe et détente sur la plage privée d'Alger.</p>
+            <div class="flex items-center justify-between">
+                <div class="flex text-yellow-400 text-lg">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <button onclick="window.location.href='H sheraton.html'" class="bg-blue-600 text-white px-4 py-2 rounded-xl">Voir plus</button>
+            </div>
+        </div>
+    </div>
+    <!-- Hôtel 4 -->
+     <div class="bg-white rounded-2xl shadow-lg overflow-hidden w-full max-w-md mx-auto">
+  <img src="https://www.ahstatic.com/photos/1540_ho_00_p_1024x768.jpg" alt="Hôtel Sofitel" class="w-full h-48 object-cover">
+  <div class="p-4">
+        <h2 class="text-xl font-semibold mb-2">Hôtel Sofitel</h2>
+        <p class="text-gray-600 mb-4">Au bord du Jardin d'Essai, élégance et sérénité au cœur d'Alger.</p>
+            <div class="flex items-center justify-between">
+                        <div class="flex text-yellow-400 text-lg">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            
+                        </div>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">Voir plus</button>
+            </div>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-6">
+    <p>&copy; 2025 TravelConnect.com - Tous droits réservés</p>
+  </footer>
+</body>
+</html>
