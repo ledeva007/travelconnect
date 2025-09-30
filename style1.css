@@ -55,13 +55,20 @@ nav a {
     font-weight: 700;
     color: #333;
 }
+.hotel-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-/* Ajout : container des cartes hôtels en flex */
+
 .hotel-cards {
     display: flex;
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .hotel-card {
@@ -327,5 +334,6 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+
 
 
