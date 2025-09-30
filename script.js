@@ -22,7 +22,7 @@ function redirectIfKnownCity(pays, ville) {
         "algérie": {
             "tizi ouzou": "tiziouzou.html",
             "oran": "oran.html",
-            "alger": "alger.html"
+            "alger": "Alger.html"
         }
     };
 
@@ -62,3 +62,4 @@ function showhotels(event) {
         hotellist.innerHTML = '<li>Aucun hôtel trouvé pour cette ville.</li>';
     }
 }
+
