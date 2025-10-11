@@ -54,9 +54,8 @@ nav a {
 }
 
 .hotel-preview {
-    padding: 60px 20px;
-    background-color: #f5f7fa;
-    text-align: center;
+  text-align: center;
+  padding: 50px 20px;
 }
 
 .hotel-preview h3 {
@@ -359,6 +358,7 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
