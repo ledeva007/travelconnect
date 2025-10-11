@@ -1,6 +1,5 @@
 const villeparpays = {
-    Algérie:["Alger","Oran","Tizi Ouzou","Bejaia"],
-    France : ["Paris","Lyon","Nice","Marseille"],
+    Algérie:["Alger","Tizi Ouzou"],
 };
 function updatecities(){
         const pays = document.getElementById("pays").value; 
@@ -21,7 +20,6 @@ function redirectIfKnownCity(pays, ville) {
     const redirections = {
         "algérie": {
             "tizi ouzou": "tiziouzou.html",
-            "oran": "oran.html",
             "alger": "alger.html"
         }
     };
@@ -62,5 +60,6 @@ function showhotels(event) {
         hotellist.innerHTML = '<li>Aucun hôtel trouvé pour cette ville.</li>';
     }
 }
+
 
 
