@@ -1,150 +1,116 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TravelConnect - Accueil</title>
-    <link rel="stylesheet" href="style1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<tête>
+<meta charset="UTaF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TravelConnect - Accueil</title>
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css ">
+
 </head>
-<body>
-<header>
-    <h1>TravelConnect</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="#">Hôtels</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<corps>
+<en-tête>
+<h1>TravelConnect</h1>
+<nav>
+<ul>
+<li><a href="#">Accueil</a></li>
+<li><a href="#">Hôtels</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+
+</nav>
 </header>
-<section class="hero">
-    <h2>Explorez nos hôtels partenaires</h2>
-    <p>Votre plateforme de réservation d'hôtels en ligne</p>
-    <a href="#hotels" class="btn">Voir les hôtels</a>
-    <form class="search-bar">
-        <label for="pays"></label>
-        <select id="pays" onchange="updatecities()">
-            <option value="">Choisir un pays</option>
-            <option value="Algérie">Algérie</option>
-            <option value="France">France</option>
-            <option value="Belgique">Belgique</option>
-            <option value="Canada">Canada</option>
-        </select>
-        <label for="ville"></label>
-        <select id="ville">
-            <option value=""> Choisir une ville </option>
-        </select>
-        <button onclick="showhotels(event)">🔍</button>
-        <div id="hotel-list"></div>
-    </form>
+<section class="héros">
+<h2>Explorez nos hôtels partenaires</h2>
+<p>Votre plateforme de réservation d'hôtels en ligne</p>
+<a href="#" class="btn">Voir les hôtels</a>
+
+<form class="search-bar">
+<label for="pays"></label>
+<select id="pays" onchange="updatecities()">
+<option value="">Choisir un pays</option>
+<option value="Algérie">Algérie</option>
+<option value="France">France</option>
+<option value="Belgique">Belgique</option>
+<option value="Canada">Canada</option>
+</select>
+<label for="ville"></label>
+
+<select id="ville">
+<option value=""> Choisir une ville </option>
+</select>
+<button onclick="showhotels(event)">🔍</button>
+<div id="liste-d-hôtels"></div>
+</form>
 </section>
-
-<section class="hotel-preview" id="hotels">
-    <h3>Nos Hôtels En Vedette</h3>
-    <div class="hotel-cards">
-        <div class="hotel-card mercure">
-            <div class="hotel-content">
-                <h4>Hôtel Mercure Alger</h4>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                </div>
-                <p>Confort moderne au coeur d'Alger</p>
-                <p class="price">17 000 DZD / nuit</p>
-                <a href="Mercure.html" class="btn-card">Réserver</a>
-            </div>
-        </div>
-
-        <div class="hotel-card sheraton">
-            <div class="hotel-content">
-                <h4>Hôtel Sheraton</h4>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <p>Hôtel de luxe avec vue sur mer</p>
-                <p class="price">20 000 DZD / nuit</p>
-                <a href="H-sheraton.html" class="btn-card">Réserver</a>
-            </div>
-        </div>
-
-        <div class="hotel-card marriott">
-            <div class="hotel-content">
-                <h4>Hôtel Marriott Alger</h4>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <p>Élégance et confort à chaque instant</p>
-                <p class="price">24 900 DZD / nuit</p>
-                <a href="marriott.html" class="btn-card">Réserver</a>
-            </div>
-        </div>
-    </div>
+<section class="hotel-preview">
+<h3>Nos Hôtels En Vedette</h3>
+<div class="cartes-d-hôtel">
+<a href="elarz.html" class="hotel-card arz">
+<h4>Hôtel EL ARZ</h4>
+<p>Ambiance montagne, détente garantie</p>
+</a>
+<a href="Mercure.html" class="carte-hotel-mercure">
+<h4>Hôtel Mercure Alger</h4>
+<p>Confort moderne au coeur d'Alger</p>
+</a>
+<a href="H sheraton.html" class="carte-hôtel sheraton">
+<h4>Hôtel Sheraton</h4>
+<p>Hôtel de luxe avec vue sur mer</p>
+</a>
+<a href="marriott.html" class="carte-hôtel marriott">
+<h4>Hôtel Marriott Alger</h4>
+<p>Élégance et confort à chaque instant</p>
+</a>
+</div>
 </section>
 
 <footer class="footer">
-    <div class="footer-container">
-        <div class="footer-section">
-            <h3>TravelConnect</h3>
-            <p>Nous sommes une plateforme dédiée à la réservation d'hôtels en ligne, offrant une large sélection d'hôtels pour tous les goûts et budgets.</p>
-            <p>Email :arezkilamrani306@gmail.com</p>
-            <p>Téléphone : +213 778 975 988</p>
-            <p>Adresse : Cité 100 Logements Boghni</p>
-        </div>
-        <div class="footer-section">
-            <h4>Navigation</h4>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Hôtels</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Nos services</a></li>
-                <li><a href="#">Sitemap</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Information</h4>
-            <ul>
-                <li><a href="#">Mention légales</a></li>
-                <li><a href="#">Politique de confidentialité</a></li>
-                <li><a href="#">Conditions d'utilisation</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Suivez-nous</h4>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">LinkedIn</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2025 TravelConnect. Tous droits réservés.</p>
-        <p>Développé par <a href="#">Arezki Lamrani</a></p>
-    </div>
+<div class="footer-container">
+<div class="footer-section">
+<h3>TravelConnect</h3>
+<p>Nous sommes une plateforme dédiée à la réservation d'hôtels en ligne, offrant une large sélection d'hôtels pour tous les goûts et budgets.</p>
+<p>Courriel : contact@TravelConnect.dz</p>
+<p>Téléphone : +213 778 975 988</p>
+<p>Adresse : Cité 100 Logements Boghni</p>
+</div>
+<div class="footer-section">
+<h4>Navigation</h4>
+<ul>
+<li><a href="#">Accueil</a></li>
+<li><a href="#">Hôtels</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">À propos</a></li>
+<li><a href="#">Nos services</a></li>
+<li><a href="#">Plan du site</a></li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h4>Informations</h4>
+<ul>
+<li><a href="#">Mention légale</a></li>
+<li><a href="#">Politique de confidentialité</a></li>
+<li><a href="#">Conditions d'utilisation</a></li>
+<li><a href="#">FAQ</a></li>
+</ul>
+</div>
+<div class="footer-section">
+<h4>Suivez-nous</h4>
+<ul>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Instagram</a></li>
+<li><a href="#">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copie; 2023 TravelConnect. Tous droits réservés.</p>
+<p>Développé par <a href="#">Arezki Lamrani</a></p>
+</div>
 </footer>
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
