@@ -71,15 +71,14 @@ nav a {
 }
 
 
-.cartes-d-hôtel {
+.cartes-hotels {
   display: flex;
-  gap: 30px;
-  justify-content: center;
   flex-wrap: wrap;
-  opacity: 1; /* pour les rendre visibles */
-  transform: translateY(0);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  justify-content: center;  /* ✅ centre les cartes */
+  gap: 30px;                /* espace entre elles */
+  margin-top: 30px;
 }
+
 
 .hotel-card {
     width: 280px;
@@ -344,6 +343,7 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
