@@ -26,12 +26,17 @@ nav a {
 }
 
 .hero {
-    height: 60vh;
-    background: linear-gradient(135deg, #0077cc, #00c6ff);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
+  height: 60vh;
+  background: linear-gradient(135deg, #0077cc, #00c6ff);
+  color: white;
+  text-align: center;  /* ✅ centre le texte et le bouton */
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* ✅ centre tout horizontalement */
 }
+
 
 .btn {
     background-color: #ffcc00;
@@ -334,6 +339,7 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
