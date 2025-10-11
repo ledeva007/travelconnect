@@ -61,14 +61,14 @@ nav a {
 }
 
 
-.hotel-cards {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+.cartes-hotels {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  opacity: 1; /* pour les rendre visibles */
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
 .hotel-card {
@@ -334,6 +334,7 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+
 
 
 
