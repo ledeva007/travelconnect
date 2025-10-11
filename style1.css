@@ -151,7 +151,7 @@ nav a {
 }
 
 .hotel-card.mercure {
-    background-image: url('photo/488105-170321.jpg');
+    background-image: url('https://github.com/ledeva007/travelconnect/blob/main/mercurephoto/facade.jpeg?raw=true');
     background-size: cover;
     background-position: center;
 }
@@ -334,5 +334,6 @@ button:hover {
 html {
   scroll-behavior: smooth;
 }
+
 
 
