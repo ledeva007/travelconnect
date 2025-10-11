@@ -8,6 +8,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     </head>
+    <script>
+  const btn = document.getElementById('btnVoirHotels');
+  const hotelsSection = document.getElementById('hotels');
+
+  btn.addEventListener('click', function(e) {
+    e.preventDefault(); // empêche le saut instantané
+    hotelsSection.scrollIntoView({ behavior: 'smooth' });
+  });
+</script>
+
     <body>
         <header>
             <h1>TravelConnect</h1>
@@ -24,7 +34,7 @@
         <section class="hero">
             <h2>Explorez nos hôtels partenaires</h2>
             <p>Votre plateforme de réservation d'hôtels en ligne</p>
-            <a href="#hotels" class="btn">Voir les hôtels</a>
+            <a href="#" class="btn" id="btnVoirHotels">Voir les hôtels</a>
 
                 <form class="search-bar">
                     <label for="pays"></label>
@@ -114,6 +124,7 @@
         
     </body>
 </html>
+
 
 
 
