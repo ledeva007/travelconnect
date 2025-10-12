@@ -24,7 +24,8 @@
         <section class="hero">
             <h2>Explorez nos hôtels partenaires</h2>
             <p>Votre plateforme de réservation d'hôtels en ligne</p>
-            <a href="#" class="btn">Voir les hôtels</a>
+            <a href="#hotels" class="btn" id="scroll-hotels">Voir les hôtels</a>
+
 
                 <form class="search-bar">
                     <label for="pays"></label>
@@ -48,8 +49,8 @@
         </section>
         
         
-        <section class="hotel-preview">
-            <h3>Nos Hôtels En Vedette</h3>
+        <section id="hotels" class="hotel-preview">
+                 <h3>Nos Hôtels En Vedette</h3>
             <div class="hotel-cards">
                 <a href="mercure.html" class="hotel-card mercure">
                     <h4>Hôtel Mercure Alger</h4>
@@ -113,6 +114,11 @@
             </div>
         </footer>
     <script src="script.js"></script>
+    <script>
+  window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+  });
+</script>
         
     </body>
 </html>
