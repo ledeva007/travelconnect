@@ -66,10 +66,10 @@ nav a {
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    opacity: 1;
+    transform: translateY(0);
 }
+
 
 .hotel-card {
     width: 280px;
@@ -83,19 +83,23 @@ nav a {
     position: relative;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* durée plus longue */
     text-shadow: 0 1px 3px rgba(0,0,0,0.6);
-    animation: fadeInUp 0.6s ease forwards;
+}
+.hotel-card:hover {
+    transform: scale(1.08); /* zoom plus visible */
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
 }
 
 .hotel-card::before {
-    content: '';
+     content: '';
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
-    backdrop-filter: blur(3px);
+    /* backdrop-filter: blur(3px); */ /* supprimer ou commenter cette ligne */
     z-index: 0;
 }
+
 
 .hotel-content {
     position: relative;
