@@ -60,6 +60,16 @@ function showhotels(event) {
         hotellist.innerHTML = '<li>Aucun hôtel trouvé pour cette ville.</li>';
     }
 }
+document.getElementById('scroll-hotels').addEventListener('click', function(e) {
+    e.preventDefault(); // empêche le saut immédiat
+    const hotelsSection = document.getElementById('hotels');
+
+    hotelsSection.scrollIntoView({
+        behavior: 'smooth', // animation fluide
+        block: 'start'      // scrolle jusqu'au début de la section
+    });
+});
+
 
 
 
